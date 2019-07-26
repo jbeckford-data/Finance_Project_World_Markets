@@ -9,9 +9,6 @@
  5: Random walk: Assuming geometric Brownian and 20% historical volatility write a sub-module<br>
  to calculate the event like the 1987 crash.  Explain in simple terms what the results imply.<br>
  6: What does "Fat tail" mean? Plot the distribution of price movement.<br>
- 7: Claim is that fractal and multi-fractals generate a more realistic picture of market<br>
- risks than log-normal.  Considering the last 10 years of NASDAQ, write a program to check whether<br>
- fractal geometry could have better predicted market movements than log-normal.  Explain with graphs.<br>
 <br><br>
  Use the following market indices:<br>
  A) Dow Jones<br>
