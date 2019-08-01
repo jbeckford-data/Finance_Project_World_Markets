@@ -5,11 +5,9 @@
 # 1: Download data  for 25 years for global markets
 # 2: Check if prices follow a log-normal distribution
 # 3: Check if returns follow a normal distribution
-# 4: For prices and Returns come up with specific statistical measure that identifies
-# the degree of deviation from the ideal distribution.  Graph represent the degree of correspondence.
-# 5: Random walk: Assuming geometric Brownian and 20% historical volatility write a sub-module
+# 4: Random walk: Assuming geometric Brownian and 20% historical volatility write a sub-module
 # to calculate the event like the 1987 crash.  Explain in simple terms what the results imply.
-# 6: What does "Fat tail" mean? Plot the distribution of price movement.
+# 5: What does "Fat tail" mean? Plot the distribution of price movement.
 
 
 # Use the following market indices:
@@ -215,9 +213,9 @@ which leads us to conclude we can REJECT the null hypothesis that our sample mea
         print('\nFor %s, the p-value of a one sample t-test is not less than 5%%\n\
 and as such, we cannot reject the null hypothesis that our true mean is zero.\n' % stock['minor'].iloc[1])
     
-""" Part 5: 1987 Crash Simulation"""
+""" Part 4: 1987 Crash Simulation"""
 
-print('Part 5: 1987 Crash Simulation.\n\n\
+print('Part 4: 1987 Crash Simulation.\n\n\
 This simulation runs 1 million random variables.  Please allow it some time.\n')
 print("The 1987 Crash was a 22.61% move in 1 day, or a 20-sigma move. \
  Let's run a simulation to find out what the probability of that occurrence actually is.\n")
@@ -267,9 +265,9 @@ In a 1 million count simulation the greatest 1-day change is: ' +str(max_change)
 else:
     print("Occurred on trial %s or %f probability." % (str(count),float(1/count)))
     
-"""Part 6: What does fat-tail mean?"""
+"""Part 5: What does fat-tail mean?"""
 
-print("\nPart 6: What does 'fat-tail' mean?\nPlot the distribution of price movement.\n")
+print("\nPart 5: What does 'fat-tail' mean?\nPlot the distribution of price movement.\n")
 print('To answer the question: a fat-tail represents data that has more observations on the outside \
 or extremities (named: outliers) of the normal distribution than of the normal distribution.\n\
 A statistical measure for the value is a measure of Kurtosis.\n\n')
