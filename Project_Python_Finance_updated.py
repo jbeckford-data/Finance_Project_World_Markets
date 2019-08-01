@@ -53,6 +53,8 @@ style.use('ggplot')
 #YAHOO Fix
 # yf.pdr_override() 
 
+## Part 1 - Download Data for 25 Years.
+## FTSE historical prices have been lost in yahoo. Not included.
 symbols = ['^DJI', '^GSPC', '^IXIC', '^GDAXI', '^HSI', '^KS11', '^NSEI']
 
 start = '1/1/1994'
